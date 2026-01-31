@@ -82,10 +82,10 @@ class DownloadDiscordStep : DownloadStep<Int>(), KoinComponent {
          * Source Stamp Signer certificate MD5 digest: 577b8a9fbc7e308321aec6411169d2fb
          * ```
          */
-        const val DISCORD_CERTIFICATE_SHA256 = "3c39d23cf9367849a5c699395647fe0e5bfea5a1f1f40d8c717ddc70f8bfa113"
+        const val DISCORD_CERTIFICATE_SHA256 = "1e08a903aef9c3a721510b64ec764d01d3d094eb954161b62544ea8f187b5953"
 
         fun getDiscordApkUrl(version: Int) =
-            "${BuildConfig.MAVEN_URL}/com/discord/discord/$version/discord-$version.apk"
+            "https://github.com/anotherdoesnm/anotherdoesnm/releases/download/test/Spacebar_com.discord.but.spacebar_126021_hIfzE.apk"
     }
 
     private class SignatureVerificationException(errors: List<ApkVerifier.IssueWithParams>) : Exception(
